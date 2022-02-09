@@ -1,6 +1,8 @@
 import Button from "./button";
+import Table from "./table";
 
-const components = [Button];
+const components = [Button, Table];
+
 const install = function (Vue) {
   if (install.installed) return;
   install.installed = true;
@@ -15,4 +17,4 @@ export default {
   ...components,
 };
 
-export { Button };
+export { Button, Table };
