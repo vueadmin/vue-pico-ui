@@ -1,7 +1,7 @@
 <template>
   <div class="grid">
     <PicoTable :data="tableData" :option="optionData" stripe>
-      <template slot-scope="scope">
+      <template #default="scope">
         <PicoButton @click="handleEdit(scope.row)">编辑</PicoButton>
       </template>
     </PicoTable>

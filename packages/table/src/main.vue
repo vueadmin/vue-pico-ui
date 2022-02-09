@@ -12,7 +12,7 @@
         <td v-for="(opt, index) in option" :key="index">
           {{ item[opt.prop] }}
         </td>
-        <td><slot></slot></td>
+        <td><slot :row="item"></slot></td>
       </tr>
     </tbody>
     <tfoot>
@@ -37,6 +37,7 @@ export default {
       default: () => [],
     },
     stripe: Boolean,
+    item: {}
   },
   methods: {
     handleClick(evt) {
