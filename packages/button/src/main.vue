@@ -1,19 +1,36 @@
 <template>
-  <div>
-    <button>Button</button>
-    <input type="submit" />
-    <a href="#" role="button">Link</a>
-    <a href="#" role="button">Link</a>
-    <a href="#" role="button" class="secondary">Secondary</a>
-    <a href="#" role="button" class="contrast">Contrast</a>
-    <a href="#" role="button" class="outline">Primary</a>
-    <a href="#" role="button" class="secondary outline">Secondary</a>
-    <a href="#" role="button" class="contrast outline">Contrast</a>
-  </div>
+  <a
+    @click="handleClick"
+    href="javascript:void(0);"
+    role="button"
+    :class="[
+      type,
+      {
+        outline: isOutline,
+      },
+    ]"
+  >
+    <slot></slot>
+  </a>
 </template>
 
 <script>
 export default {
   name: "PicoButton",
+  props: {
+    type: {
+      type: String,
+      default: "default",
+    },
+    isOutline: Boolean,
+  },
+  data() {
+    return {};
+  },
+  methods: {
+    handleClick(evt) {
+      this.$emit("click", evt);
+    },
+  },
 };
 </script>
