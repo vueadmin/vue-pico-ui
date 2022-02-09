@@ -6,7 +6,7 @@
     :class="[
       type,
       {
-        outline: isOutline,
+        outline
       },
     ]"
   >
@@ -22,7 +22,7 @@ export default {
       type: String,
       default: "default",
     },
-    isOutline: Boolean,
+    outline: Boolean,
   },
   data() {
     return {};

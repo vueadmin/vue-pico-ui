@@ -12,7 +12,7 @@
         <td v-for="(opt, index) in option" :key="index">
           {{ item[opt.prop] }}
         </td>
-        <td><slot :row="item"></slot></td>
+        <td><slot :row="item" :index="index"></slot></td>
       </tr>
     </tbody>
     <tfoot>
