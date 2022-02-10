@@ -1,12 +1,12 @@
 <template>
   <a
     @click="handleClick"
-    href="javascript:void(0);"
+    href="#close"
     role="button"
     :class="[
       type,
       {
-        outline
+        outline,
       },
     ]"
   >

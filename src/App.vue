@@ -1,16 +1,27 @@
 <template>
   <div class="grid">
-    <!-- <PicoButton>default</PicoButton>
-    <PicoButton type="secondary">secondary</PicoButton>
-    <PicoButton type="contrast">contrast</PicoButton>
-    <PicoButton outline>default</PicoButton>
-    <PicoButton type="secondary" outline>secondary</PicoButton>
-    <PicoButton type="contrast" outline>contrast</PicoButton> -->
-    <PicoTable :data="tableData" :option="optionData" stripe>
+    <!-- <PicoButton>default</PicoButton> -->
+    <!-- <PicoButton type="secondary">secondary</PicoButton> -->
+    <!-- <PicoButton type="contrast">contrast</PicoButton> -->
+    <!-- <PicoButton outline>default</PicoButton> -->
+    <!-- <PicoButton type="secondary" outline>secondary</PicoButton> -->
+    <!-- <PicoButton type="contrast" outline>contrast</PicoButton> -->
+    <!-- <PicoTable :data="tableData" :option="optionData" stripe>
       <template #default="scope">
-        <PicoButton @click="handleEdit(scope.row, scope.index)">编辑</PicoButton>
+        <PicoButton @click="handleEdit(scope.row, scope.index)"
+          >编辑</PicoButton
+        >
       </template>
-    </PicoTable>
+    </PicoTable> -->
+    <PicoDialog title="Modal title demo" :visible.sync="visible">
+      <p>
+        Nunc nec ligula a tortor sollicitudin dictum in vel enim. Quisque
+        facilisis turpis vel eros dictum aliquam et nec turpis. Sed eleifend a
+        dui nec ullamcorper. Praesent vehicula lacus ac justo accumsan
+        ullamcorper.
+      </p>
+    </PicoDialog>
+    <PicoButton @click="handleOpenModal">打开</PicoButton>
   </div>
 </template>
 
@@ -18,6 +29,7 @@
 export default {
   data() {
     return {
+      visible: false,
       optionData: [
         {
           label: "姓名",
@@ -60,12 +72,14 @@ export default {
     onClickButton(e) {
       console.log(e);
     },
-    handleEdit(e) {
-      console.log(e);
+    handleEdit(row, index) {
+      console.log(row, index);
+    },
+    handleOpenModal() {
+      this.visible = !this.visible;
     }
   },
 };
 </script>
 
-<style>
-</style>
+<style></style>

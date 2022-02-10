@@ -37,7 +37,7 @@ export default {
       default: () => [],
     },
     stripe: Boolean,
-    item: {}
+    item: {},
   },
   methods: {
     handleClick(evt) {
