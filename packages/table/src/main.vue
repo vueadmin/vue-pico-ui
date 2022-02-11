@@ -2,8 +2,9 @@
   <table :role="stripe ? 'grid' : ''">
     <thead>
       <tr>
-        <th scope="col">#</th>
+        <th>#</th>
         <th v-for="(opt, index) in option" :key="index">{{ opt.label }}</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -17,8 +18,9 @@
     </tbody>
     <tfoot>
       <tr>
-        <th scope="col">#</th>
+        <th>#</th>
         <td v-for="(opt, index) in option" :key="index">{{ opt.label }}</td>
+        <th></th>
       </tr>
     </tfoot>
   </table>

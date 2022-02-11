@@ -10,7 +10,10 @@
         ></a>
         {{ title }}
       </header>
-      <slot></slot>
+      <slot name="main"></slot>
+      <footer>
+        <slot name="footer"></slot>
+      </footer>
     </article>
   </dialog>
 </template>
