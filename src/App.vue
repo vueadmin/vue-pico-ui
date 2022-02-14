@@ -29,7 +29,19 @@
       </template>
     </PicoDialog> -->
     <!-- <PicoButton @click="handleOpenModal">打开</PicoButton> -->
-    <PicoProgress value="95" max="100" indeterminate />
+    <!-- <PicoProgress value="95" max="100" indeterminate /> -->
+    <PicoCard>
+      <!-- <template v-slot:header>
+        <PicoButton @click="handleCloseModal">取消</PicoButton>
+        <PicoButton @click="handleCloseModal">提交</PicoButton>
+      </template> -->
+      <PicoButton @click="handleCloseModal">取消</PicoButton>
+      <PicoButton @click="handleCloseModal">提交</PicoButton>
+      <!-- <template v-slot:footer>
+        <PicoButton @click="handleCloseModal">取消</PicoButton>
+        <PicoButton @click="handleCloseModal">提交</PicoButton>
+      </template> -->
+    </PicoCard>
   </div>
 </template>
 

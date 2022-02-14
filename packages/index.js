@@ -2,8 +2,9 @@ import Button from "./button";
 import Table from "./table";
 import Dialog from "./dialog";
 import Progress from "./progress";
+import Card from "./card";
 
-const components = [Button, Table, Dialog, Progress];
+const components = [Button, Table, Dialog, Progress, Card];
 
 const install = function (Vue) {
   if (install.installed) return;
@@ -19,4 +20,4 @@ export default {
   ...components,
 };
 
-export { Button, Table, Dialog, Progress };
+export { Button, Table, Dialog, Progress, Card };
