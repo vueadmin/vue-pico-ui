@@ -30,17 +30,38 @@
     </PicoDialog> -->
     <!-- <PicoButton @click="handleOpenModal">打开</PicoButton> -->
     <!-- <PicoProgress value="95" max="100" indeterminate /> -->
-    <PicoCard>
-      <!-- <template v-slot:header>
+    <!-- <PicoCard>
+      <template v-slot:header>
         <PicoButton @click="handleCloseModal">取消</PicoButton>
         <PicoButton @click="handleCloseModal">提交</PicoButton>
-      </template> -->
+      </template>
       <PicoButton @click="handleCloseModal">取消</PicoButton>
       <PicoButton @click="handleCloseModal">提交</PicoButton>
-      <!-- <template v-slot:footer>
+      <template v-slot:footer>
         <PicoButton @click="handleCloseModal">取消</PicoButton>
         <PicoButton @click="handleCloseModal">提交</PicoButton>
-      </template> -->
+      </template>
+    </PicoCard> -->
+    <PicoCard>
+      <PicoCollapse>
+        <template v-slot:title>Collapsible elements 1111</template>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          urna diam, tincidunt nec porta sed, auctor id velit. Etiam venenatis
+          nisl ut orci consequat, vitae tempus quam commodo. Nulla non mauris
+          ipsum. Aliquam eu posuere orci. Nulla convallis lectus rutrum quam
+          hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar
+          mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices,
+          porta turpis sit amet, congue turpis.
+        </p>
+      </PicoCollapse>
+      <PicoCollapse open>
+        <template v-slot:title>Collapsible elements 1111</template>
+        <ul>
+          <li>Vestibulum id elit quis massa interdum sodales.</li>
+          <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
+        </ul>
+      </PicoCollapse>
     </PicoCard>
   </div>
 </template>
