@@ -13,7 +13,7 @@
         >
       </template>
     </PicoTable> -->
-    <PicoDialog title="Modal title demo" :visible.sync="visible">
+    <!-- <PicoDialog title="Modal title demo" :visible.sync="visible">
       <template v-slot:main>
         <PicoTable :data="tableData" :option="optionData">
           <template #default="scope">
@@ -27,8 +27,9 @@
         <PicoButton @click="handleCloseModal">取消</PicoButton>
         <PicoButton @click="handleCloseModal">提交</PicoButton>
       </template>
-    </PicoDialog>
-    <PicoButton @click="handleOpenModal">打开</PicoButton>
+    </PicoDialog> -->
+    <!-- <PicoButton @click="handleOpenModal">打开</PicoButton> -->
+    <PicoProgress value="95" max="100" indeterminate />
   </div>
 </template>
 

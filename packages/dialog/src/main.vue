@@ -18,7 +18,6 @@
   </dialog>
 </template>
 
-
 <script>
 export default {
   name: "PicoDialog",
