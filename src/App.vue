@@ -13,15 +13,23 @@
         >
       </template>
     </PicoTable> -->
-    <PicoDialog title="Modal title demo" :visible.sync="visible">
-      <p>
-        Nunc nec ligula a tortor sollicitudin dictum in vel enim. Quisque
-        facilisis turpis vel eros dictum aliquam et nec turpis. Sed eleifend a
-        dui nec ullamcorper. Praesent vehicula lacus ac justo accumsan
-        ullamcorper.
-      </p>
-    </PicoDialog>
-    <PicoButton @click="handleOpenModal">打开</PicoButton>
+    <!-- <PicoDialog title="Modal title demo" :visible.sync="visible">
+      <template v-slot:main>
+        <PicoTable :data="tableData" :option="optionData">
+          <template #default="scope">
+            <PicoButton @click="handleEdit(scope.row, scope.index)"
+              >编辑</PicoButton
+            >
+          </template>
+        </PicoTable>
+      </template>
+      <template v-slot:footer>
+        <PicoButton @click="handleCloseModal">取消</PicoButton>
+        <PicoButton @click="handleCloseModal">提交</PicoButton>
+      </template>
+    </PicoDialog> -->
+    <!-- <PicoButton @click="handleOpenModal">打开</PicoButton> -->
+    <PicoProgress value="95" max="100" indeterminate />
   </div>
 </template>
 
@@ -34,6 +42,26 @@ export default {
         {
           label: "姓名",
           prop: "name",
+        },
+        {
+          label: "日期",
+          prop: "date",
+        },
+        {
+          label: "日期",
+          prop: "date",
+        },
+        {
+          label: "日期",
+          prop: "date",
+        },
+        {
+          label: "日期",
+          prop: "date",
+        },
+        {
+          label: "日期",
+          prop: "date",
         },
         {
           label: "日期",
@@ -77,7 +105,10 @@ export default {
     },
     handleOpenModal() {
       this.visible = !this.visible;
-    }
+    },
+    handleCloseModal() {
+      this.visible = false;
+    },
   },
 };
 </script>

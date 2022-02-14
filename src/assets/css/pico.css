@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
       "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
       "Segoe UI Symbol", "Noto Color Emoji";
@@ -18,4 +18,15 @@
     --form-element-spacing-horizontal: 1rem;
     --form-label-font-weight: var(--font-weight);
     --transition: 0.2s ease-in-out;
+  } */
+
+  @media (min-width: 576px) {
+    dialog article {
+      max-width: 100vw;
+    }
+  }
+  @media (min-width: 768px) {
+    dialog article {
+      max-width: 100vw;
+    }
   }
