@@ -12,6 +12,6 @@
 
 <script>
 export default {
-  name: "PicoCard"
+  name: "PicoCard",
 };
 </script>

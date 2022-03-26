@@ -1,5 +1,10 @@
 <template>
-  <progress id="indeterminate-progress" indeterminate :value="value" :max="max"></progress>
+  <progress
+    id="indeterminate-progress"
+    indeterminate
+    :value="value"
+    :max="max"
+  ></progress>
 </template>
 
 <script>
@@ -9,6 +14,6 @@ export default {
     value: String,
     max: String,
     indeterminate: Boolean,
-  }
+  },
 };
 </script>

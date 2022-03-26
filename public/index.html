@@ -6,12 +6,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      .contentedi {
+        width: 400px;
+        min-height: 100px;
+        max-height: 300px;
+        _height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3px;
+        outline: 0;
+        border: 1px solid #a0b3d6;
+        font-size: 12px;
+        word-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: auto;
+        _overflow-y: visible;
+      }
+      </style>
   </head>
   <body>
-    <noscript>
+    <!-- <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
+    </noscript> -->
+    <div id="app">
+      <div class="contentedi" contenteditable="true">.....此处省略.....</div>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
